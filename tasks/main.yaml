@@ -1,0 +1,7 @@
+---
+
+- name: disable ctrl+alt+del
+  systemd:
+    masked: yes
+    name: ctrl-alt-del.target
+  notify: daemon reload
